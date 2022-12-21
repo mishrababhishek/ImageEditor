@@ -237,7 +237,6 @@ Description : A Simple Python Gui Application Using Tkinter For Apply Different 
         # window
         self.title("Image Editor")
         self.geometry(f"{850}x{550}+{150}+{100}")
-        self.resizable(False, False)
         self.iconphoto(False, tkinter.PhotoImage(file="logo.png"))
         self.config(bg="#2B2B2B")
 
