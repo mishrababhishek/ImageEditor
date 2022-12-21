@@ -33,7 +33,6 @@ class Editor:
         self._img = Image.open(path)
         self._reset = self._img
         self.name, self.extension = os.path.splitext(path)
-        print(f"{self.name} {self.extension}")
         self._callback.image_update(ImageTk.PhotoImage(self._img.resize((525, 476), Image.ANTIALIAS)))
 
     def reset_image(self):
